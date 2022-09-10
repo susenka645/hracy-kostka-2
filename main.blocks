@@ -1,0 +1,37 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="~m.QTmC2-?v+n6=77@$.">hodnota kostky</variable><variable id=")uSWc?Q{G425w1Bl%2Lp">seznam</variable><variable id="]/CNFrQH[_pY*xbo*fLw">myImage</variable></variables><block type="pxt-on-start" id="Ji1}9I0IzaWq^h,?4iO/" x="0" y="0"><statement name="HANDLER"><block type="function_call" id="N8t2#}4T{|JK:{e0+rab"><mutation name="nastavitvzorykostek" functionid="^Ln5~5Fjk}nTgr)-,2yc"></mutation><next><block type="function_call" id="RZO@,?f9#Grt_N~;^5:o"><mutation name="házetkostkami" functionid="~CqVEucFaa}6Qw0,Shr+"></mutation></block></next></block></statement></block><block type="device_gesture_event" id=")vhim0^BLvo+PD~UV96:" x="272" y="159"><field name="NAME">Gesture.Shake</field><statement name="HANDLER"><block type="variables_set" id="%ratXhWZw[Dh|sPrlqe2"><field name="VAR" id="~m.QTmC2-?v+n6=77@$.">hodnota kostky</field><value name="VALUE"><shadow type="math_number" id="fVRKn#/zZmD!u6@~#0mS"><field name="NUM">0</field></shadow></value><next><block type="function_call" id="TfIO]6ZW5X6P2a,hZ/BW"><mutation name="házetkostkami" functionid="~CqVEucFaa}6Qw0,Shr+"></mutation></block></next></block></statement></block><block type="function_definition" id="8gR1Dd.DUBv_8!oGeSKr" x="-206" y="273"><mutation name="nastavitvzorykostek" functionid="^Ln5~5Fjk}nTgr)-,2yc"></mutation><field name="function_name">nastavitvzorykostek</field><statement name="STACK"><block type="variables_set" id=",%zgzp(XB-c?TdRf%8``"><field name="VAR" id=")uSWc?Q{G425w1Bl%2Lp">seznam</field><value name="VALUE"><block type="lists_create_with" id="~T~$YYu(Ny(4@qc8EdjK" inline="false"><mutation items="6" horizontalafter="3"></mutation><value name="ADD0"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="device_build_image" id="Y~tG-rx{,#6rp/T{,ZuL"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . # . . 
+        . . . . . 
+        . . . . .
+        `</field></block></value><value name="ADD1"><shadow type="math_number" disabled="true"><field name="NUM">1</field></shadow><block type="device_build_image" id="V[)d*Ug3k6Jl(L:MHm19"><field name="LEDS">`
+        . . . . # 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        # . . . .
+        `</field></block></value><value name="ADD2"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="device_build_image" id="r``/TPtJU-`6:3i#,QqF"><field name="LEDS">`
+        . . . . # 
+        . . . . . 
+        . . # . . 
+        . . . . . 
+        # . . . .
+        `</field></block></value><value name="ADD3"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="device_build_image" id="q|ZY|]CE-B1+h=2?of_3"><field name="LEDS">`
+        # . . . # 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        # . . . #
+        `</field></block></value><value name="ADD4"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="device_build_image" id="hM$ou*;EaeN_;Qg;F~mH"><field name="LEDS">`
+        # . . . # 
+        . . . . . 
+        . . # . . 
+        . . . . . 
+        # . . . #
+        `</field></block></value><value name="ADD5"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="device_build_image" id="bl[z-KMXP=MmKu@MYT!c"><field name="LEDS">`
+        # . . . # 
+        . . . . . 
+        # . . . # 
+        . . . . . 
+        # . . . #
+        `</field></block></value></block></value></block></statement></block><block type="function_definition" id="I`3y2:rx-,?V(mf8$eh[" x="355" y="393"><mutation name="házetkostkami" functionid="~CqVEucFaa}6Qw0,Shr+"></mutation><field name="function_name">házetkostkami</field><statement name="STACK"><block type="device_show_image_offset" id="E*zu`0iZEb2YlVC/CqMx"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="sprite"><block type="lists_index_get" id="#$?*iAIq-9+wcq[lL1VH"><value name="LIST"><block type="variables_get" id="%;,V/(xHs[dajKU^/3zh"><field name="VAR" id=")uSWc?Q{G425w1Bl%2Lp">seznam</field></block></value><value name="INDEX"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="device_random" id="Zr[t*dH/V/Q*#sqv54Yj"><value name="min"><shadow type="math_number" id="rJ?Fs-gQeFVs{Kq8l{GW"><field name="NUM">2</field></shadow></value><value name="limit"><shadow type="math_number" id="ZJ1C+[z+$-@rtmMJ0uTQ"><field name="NUM">5</field></shadow></value></block></value></block></value><value name="offset"><shadow type="math_number" id="7y3TIYjm{E2Wojd_|N+d"><field name="NUM">0</field></shadow></value><value name="interval"><shadow type="math_number" id="R/.@xvMedeKsdt`5*%h*"><field name="NUM">400</field></shadow></value></block></statement></block><block type="device_button_event" id=".FWc_,{a:BkyAvVm*#@$" x="687" y="740"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="device_show_number" id="X#x*%?VsvR33$DqLU%G3"><value name="number"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_temperature" id="if4e7yDK1wU:,c1Yi~Iw"></block></value></block></statement></block><block type="device_button_event" id="HXfI9GmZ@8Hx$4Wod:(o" x="1019" y="783"><field name="NAME">Button.AB</field><statement name="HANDLER"><block type="playMelody" id="yOf9u/*+HA9KStCBwvQV"><value name="melody"><shadow type="melody_editor" id="?,b5.FVS}vR$-=9b)5It"><field name="melody">"C5 A B G A F G E "</field></shadow></value><value name="tempo"><shadow type="math_number_minmax" id="!AIdJ:^GF=Y!V)(Me|fu"><mutation min="40" max="500" label="Tempo" precision="0"></mutation><field name="SLIDER">120</field></shadow></value></block></statement></block><block type="device_button_event" id="FWLRlZX9^x[}T$o}gDR+" x="666" y="903"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="device_show_number" id="jhrni[x17g`W[)nABMwl"><value name="number"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_get_light_level" id="2j%IizJg`v|LePC3=X,Y"></block></value></block></statement></block></xml>
